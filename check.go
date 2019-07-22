@@ -26,7 +26,7 @@ func getExec() (string, error) {
 	}
 }
 
-func OTACheck() error {
+func OTACheck(AppName, AppVersion, OTAUrl string) error {
 	req, err := http.NewRequest("GET", OTAUrl, nil)
 	if err != nil {
 		return err

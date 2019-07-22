@@ -13,7 +13,7 @@ const OTAUrl string = "http://url/check"
 **in your main:**
 
 ```go
-if err := OTACheck(); err != nil {
+if err := OTACheck(AppName, AppVersion, OTAUrl); err != nil {
     fmt.Println(err)
 }
 ```
